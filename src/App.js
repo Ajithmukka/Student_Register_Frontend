@@ -30,7 +30,7 @@ function App() {
         mobile: student.mobile,
         course: student.course,
       };
-      await axios.post("http://localhost:5000/api/register", payload);
+      await axios.post("https://studentregister-production.up.railway.app/api/register", payload);
       alert("Student Registered!");
       setStudent({
         name: "",
